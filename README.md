@@ -2,21 +2,33 @@
 
 ![usage screenshot](https://github.com/okulinich/ush/blob/master/ush_usage.png?raw=true)
 
-This is simple command line interpreter for Unix.
-       Developers: [@okulinich](https://github.com/okulinich), [@ailchuk](https://github.com/ailchuk)
+This is simple command-line interpreter (based on bash) for Unix.
 
-   **ush**:
-* u - ucode
-* sh - shell
+## How to use
 
-You need clang compiler to be installed to compile this 
-project, or you can change default compiler in Makefile.
+### Compilation:
 
-Use `make` to install and `./ush` to start shell.
-`make uninstall` - uninstall shell
-`make reistall` - uninstall & install shell
+```
+make
+./ush
+```
 
-**ush** implements builtin commands:
+### Reinstalliation:
+
+```
+make reinstall
+./ush
+```
+
+### Uninstalliation:
+
+```
+make uninstall
+```
+
+## Implemented functionality
+
+**Builtin commands with flags**
 - `export`
 - `unset`
 - `exit`
@@ -40,4 +52,11 @@ expansion `${parameter}`, command substitution ``command`` and `$(command)`.
 
 Command editing is allowed with Arrow keys.
 
-**Enjoy!**
+## Developers: 
+- Oleksand Kulinich [@okulinich](https://github.com/okulinich)
+- Andrii Ilchuk [@ailchuk](https://github.com/ailchuk)
+
+## License
+
+Collision is an open-sourced software licensed under the
+[MIT license](LICENSE.md).
