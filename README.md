@@ -28,10 +28,17 @@ make uninstall
 
 ## Implemented functionality
 
-**Builtin commands with flags**
+**Builtin commands withщге flags**
 - `export`
 - `unset`
 - `exit`
+- `true`
+- `false`
+- `return`
+- `bye`
+- `set`
+
+**Builtin commands with flags**
 - `env` with `-i`, `-P`, `-u`
 - `cd`  with `-s`, `-P`  and `-` argument
 - `pwd` with `-L`, `-P`
